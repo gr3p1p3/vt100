@@ -4,9 +4,14 @@ const fs = require('fs');
 const Splitter = require('./lib/Splitter');
 const Delay = require('./lib/Delay');
 
-
 const DEFAULT_OPT = {fps: 60, clearBefore: true};
 
+/**
+ *
+ * @param {String} filePath -
+ * @param {Object} [options] -
+ * @returns {ReadStream}
+ */
 function stream(filePath = '', options) {
     options = {...DEFAULT_OPT, ...options};
     let inputStream;
@@ -30,6 +35,5 @@ function stream(filePath = '', options) {
         .pipe(new Splitter('')) //splitting each char
         .pipe(new Delay(options.fps / 1000)); //animate
 }
-
 
 module.exports = stream;

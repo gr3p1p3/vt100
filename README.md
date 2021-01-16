@@ -31,12 +31,46 @@ or
 vt100 --src=absolute/path/to/file.vt
 ```
 
-
 ### Enjoy more
 
 You will find more animations on official [vt100 GitHub](https://github.com/gr3p1p3/vt100/tree/master/animations) page.
 
 
+## JS-API
+
+You can use [VT100.js](https://www.npmjs.com/package/vt100) not only as CLI, but for implement your own software too.
+
+### Example
+
+This implement a simple [TCP-Server](https://nodejs.org/api/net.html#net_class_net_server) that listens on a certain port and send Animation to each connected client.
+
+
+```javascript
+const net = require('net');
+const Player = require('vt100');
+
+const server = net.createServer(function onConnectedSocket(client) {
+    return Player('./path/to/absolute/file.vt',
+        {clearBefore: false}) //need to deactivate default vt100's behaviour
+        .on('data', function (data) {
+            client.write(data); //send animation-data
+        })
+        .on('end', function () {
+            client.write('\n\n\n\u001b[1000DHosted by @gr3p'); // send bye-message at begin of line
+            client.destroy(); //destroy client-connection after animation is done
+        })
+});
+
+server.listen(23, '0.0.0.0', function () {
+    console.log('Server was started!');
+});
+```
+
+Test:
+
+```bash
+telnet localhost
+```
 
 ## Bugs & Issues
 
