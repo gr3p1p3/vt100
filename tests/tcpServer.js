@@ -11,8 +11,6 @@ const Player = require('../play');
 
 const server = net.createServer(function onConnectedSocket(client) {
     console.log('Connected client from', client.remoteAddress);
-    client.setEncoding('ascii');
-
     const p = Player('./animations/snowing.vt',
         {clearBefore: false}) //need to deactivate default vt100's behaviour
         .on('data', function (data) {
