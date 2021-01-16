@@ -4,10 +4,14 @@ const fs = require('fs');
 const Splitter = require('./lib/Splitter');
 const Delay = require('./lib/Delay');
 
-function stream(filePath = '', options = {fps: 60, clearBefore: true}) {
+
+const DEFAULT_OPT = {fps: 60, clearBefore: true};
+
+function stream(filePath = '', options) {
+    options = {...DEFAULT_OPT, ...options};
     let inputStream;
 
-    if (!process.stdin.isTTY) {
+    if (!process.stdin.isTTY) { //process was piped
         inputStream = process.stdin;
     }
     else if (filePath && typeof filePath === 'string') {

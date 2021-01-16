@@ -10,7 +10,9 @@ Player for VT100-Animations. Play & enjoy old school terminal animations
 
 
 ### Enjoy
-`curl http://artscene.textfiles.com/vt100/blinkeyes.vt | vt100`
+`curl https://raw.githubusercontent.com/gr3p1p3/vt100/master/animations/blinkeyes.vt | vt100`
+
+You will find more animations on official [vt100 GitHub-Repo](https://github.com/gr3p1p3/vt100/tree/master/animations). 
 
 
 
@@ -18,4 +20,3 @@ Player for VT100-Animations. Play & enjoy old school terminal animations
 ## Bugs & Issues
 
 This is actually a beta, fixes & issues are welcome.
-
