@@ -1,4 +1,4 @@
-#VT100.js
+# VT100.js
 
 Player for VT100-Animations.
 Play & enjoy old school animations on your terminal.
