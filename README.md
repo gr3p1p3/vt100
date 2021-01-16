@@ -7,7 +7,7 @@ Play & enjoy old school animations on your terminal.
 
 VT100-Animations are files containing special [escaped character sequences](https://en.wikipedia.org/wiki/ANSI_escape_code), that old [VT100-Terminals](https://en.wikipedia.org/wiki/VT100) recognize and render.
 
-Every modern Terminal can emulate this behaviours, but unfortunately they are too fast for this goal.
+Every modern Terminal can emulate these behaviours, but unfortunately they are too fast for this goal.
  
 [VT100.js](https://www.npmjs.com/package/vt100) comes to the rescue!
 
