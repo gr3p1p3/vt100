@@ -9,6 +9,7 @@ VT100-Animations are files containing special [escaped character sequences](http
 
 Every modern Terminal can emulate this behaviours, but unfortunately they are too fast for this goal.
  
+[VT100.js](https://www.npmjs.com/package/vt100) comes to the rescue!
 
 ## Quickstart
 
