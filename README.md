@@ -16,10 +16,16 @@ nmp -g install vt100
 curl https://raw.githubusercontent.com/gr3p1p3/vt100/master/animations/blinkeyes.vt | vt100
 ```
 
+or 
+
+```bash
+vt100 --src=absolute/path/to/file.vt
+```
+
 
 ### Enjoy more
 
-You will find more animations on official [vt100 GitHub-Repo](https://github.com/gr3p1p3/vt100/tree/master/animations). 
+You will find more animations on official [vt100 GitHub](https://github.com/gr3p1p3/vt100/tree/master/animations) page.
 
 
 
