@@ -10,6 +10,7 @@ const Player = require('../play');
 
 
 const server = net.createServer(function onConnectedSocket(client) {
+    console.log('Connected client from', client.remoteAddress);
     return Player('./animations/beavis_butthead.vt',
         {clearBefore: false}) //need to deactivate default vt100's behaviour
         .on('data', function (data) {
