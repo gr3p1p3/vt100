@@ -1,6 +1,14 @@
 #VT100.js
 
-Player for VT100-Animations. Play & enjoy old school terminal animations
+Player for VT100-Animations.
+Play & enjoy old school animations on your terminal.
+
+## Intro
+
+VT100-Animations are files containing special [escaped character sequences](https://en.wikipedia.org/wiki/ANSI_escape_code), that old [VT100-Terminals](https://en.wikipedia.org/wiki/VT100) recognize and render.
+
+Every modern Terminal can emulate this behaviours, but unfortunately they are too fast for this goal.
+ 
 
 ## Quickstart
 
