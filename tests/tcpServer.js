@@ -25,4 +25,3 @@ const server = net.createServer(function onConnectedSocket(client) {
 server.listen(23, '0.0.0.0', function () {
     console.log('Server was started!');
 });
-

@@ -33,12 +33,12 @@ vt100 --src=absolute/path/to/file.vt
 
 ### Enjoy more
 
-You will find more animations on official [vt100 GitHub](https://github.com/gr3p1p3/vt100/tree/master/animations) page.
+You will find more animations hosted on official [vt100 GitHub](https://github.com/gr3p1p3/vt100/tree/master/animations) repository.
 
 
 ## JS-API
 
-You can use [VT100.js](https://www.npmjs.com/package/vt100) not only as CLI, but for implement your own software too.
+You can use [VT100.js](https://www.npmjs.com/package/vt100) not only as [CLI](https://en.wikipedia.org/wiki/Command-line_interface), but for implement your own software too.
 
 ### Example
 
