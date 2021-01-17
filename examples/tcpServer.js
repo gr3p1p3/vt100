@@ -11,7 +11,7 @@ const Player = require('../play');
 
 const server = net.createServer(function onConnectedSocket(client) {
     console.log('Connected client from', client.remoteAddress);
-    const p = Player('./animations/snowing.vt',
+    const p = Player('./animations/beavis_butthead.vt',
         {clearBefore: false}) //need to deactivate default vt100's behaviour
         .on('data', function (data) {
             client.write(data); //send animation-data
