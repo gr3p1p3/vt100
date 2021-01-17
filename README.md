@@ -7,9 +7,9 @@ Play & enjoy old school animations on your terminal.
 
 VT100-Animations are files containing special [escaped character sequences](https://en.wikipedia.org/wiki/ANSI_escape_code), that old [VT100-Terminals](https://en.wikipedia.org/wiki/VT100) recognize and render.
 
-Every modern Terminal can emulate these behaviours, but unfortunately they are too fast for this goal.
+Every modern Terminal can emulate these behaviours, but "unfortunately" they are too fast for this goal.
  
-[VT100.js](https://www.npmjs.com/package/vt100) comes to the rescue!
+[VT100.js](https://www.npmjs.com/package/vt100) comes to the rescue.
 
 ## Quickstart
 
@@ -42,7 +42,7 @@ You can use [VT100.js](https://www.npmjs.com/package/vt100) not only as [CLI](ht
 
 ### Example
 
-This implement a simple [TCP-Server](https://nodejs.org/api/net.html#net_class_net_server) that listens on a certain port and send Animation to each connected client.
+This implement a simple [TCP-Server](https://nodejs.org/api/net.html#net_class_net_server) that listens on a certain port and sends Animation to each connected client.
 
 
 ```javascript
@@ -73,11 +73,12 @@ server.listen(23, '0.0.0.0', function () {
 });
 ```
 
-Test:
+Watch:
 
 ```bash
 telnet localhost
 ```
+
 
 ## Bugs & Issues
 

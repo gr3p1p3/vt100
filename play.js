@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const Throttle = require('throttle');
+const Throttle = require('throttle'); //TODO implement own throttle
 
 const DEFAULT_OPT = {limit: 1200, clearBefore: true};
 
@@ -8,7 +8,7 @@ const DEFAULT_OPT = {limit: 1200, clearBefore: true};
  *
  * @param {String} filePath -
  * @param {Object} [options] -
- * @returns {ReadStream}
+ * @returns {ReadableStream}
  */
 function stream(filePath = '', options) {
     options = {...DEFAULT_OPT, ...options};
