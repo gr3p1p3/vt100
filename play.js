@@ -29,7 +29,7 @@ function stream(filePath = '', options) {
     }
 
     return inputStream
-        .pipe(new Throttle(options.limit));
+        .pipe(new Throttle(options.limit)); //limiting bytes pro second
 }
 
 module.exports = stream;
