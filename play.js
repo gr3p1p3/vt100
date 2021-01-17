@@ -1,10 +1,8 @@
 const fs = require('fs');
 
-//my stream-transformers
-const Splitter = require('./lib/Splitter');
-const Delay = require('./lib/Delay');
+const Throttle = require('throttle');
 
-const DEFAULT_OPT = {fps: 60, clearBefore: true};
+const DEFAULT_OPT = {limit: 1200, clearBefore: true};
 
 /**
  *
@@ -31,9 +29,7 @@ function stream(filePath = '', options) {
     }
 
     return inputStream
-        .pipe(new Splitter('\r\n|\n')) //splitting each line
-        .pipe(new Splitter('')) //splitting each char
-        .pipe(new Delay(options.fps / 1000)); //animate
+        .pipe(new Throttle(options.limit));
 }
 
 module.exports = stream;
