@@ -1,32 +1,3 @@
-Path: rrze.uni-erlangen.de!fauern!xlink.net!howland.reston.ans.net!europa.eng.gtefsd.com!uunet!ddsw1!not-for-mail
-    From: jorn@genesis.MCS.COM (Jorn Barger)
-Newsgroups: alt.ascii-art
-Subject: ANSI animations
-Date: 30 Oct 1993 20:22:31 -0500
-Organization: MCSNet Subscriber, Chicago, IL
-Lines: 409
-Distribution: world
-Message-ID: <2av40n$kun@genesis.MCS.COM>
-NNTP-Posting-Host: genesis.mcs.com
-
-Here's Bambi vs Godzilla again.  The two recent ANSI posts both
-appeared here *without escapes*, so they didn't cat right for me at
-all.  This and the following post include VT100 control codes for
-    positioning the cursor, allowing fairly complicated animations to be
-transmitted fairly compactly.  Some terminals may freak out, though.
-(If yours does, please tell me what kind it was and how bad...)
-If this goes by too quick to see, you're too rich anyway!  Get
-a cheesier connection.  :^)
-((If it pauses for 'more' every few lines (like it just did for me?!?)
-    I don't know what to recommend...))
-
-
-
-
-/* ---------- "(A) Bambi Vs. Godzilla" ---------- */
-/* Written  7:06 am  Mar  8, 1993 by csg188@cch.coventry.ac.uk in igc:alt.fan.monty- */
-/* ---------- "bambi" ---------- */
-Copy this post into a file and then 'CAT' it ....
 
 
 
